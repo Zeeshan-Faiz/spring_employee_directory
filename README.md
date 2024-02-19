@@ -1,5 +1,7 @@
 # Spring Boot Employee Directory Web Application Documentation
 
+![image.info](snapshot.png)
+
 ## Overview
 
 Welcome to the Spring Boot Employee Directory Web Application, a project designed to manage and display employee details. This application leverages Spring Boot, Thymeleaf, JDBC, HTML, and CSS to create an interactive employee directory.
@@ -74,7 +76,6 @@ public class EmployeeController {
 	public EmployeeController(EmployeeService theEmployeeService) {
 		employeeService = theEmployeeService;
 	}
-
 
 	@GetMapping("/list")
 	public String listEmployees(Model theModel) {
